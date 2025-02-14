@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/src/output.css" rel="stylesheet">
+    </head>
+    <body class="bg-[#212830] place-items-center text-white">
+
+        <section class="bg-[#5f8ca0] w-[75vw] rounded-2xl">
+            <div class="flex flex-col justify-center">
+                <h1 class="text-5xl flex justify-center">Doing Stuff With
+                    Data</h1>
+            </div>
+
+            <div class="flex justify-center m-[2rem_0rem]">
+                <div class="flex justify-around  w-full ps-6 pe-6 ">
+
+                    <div>
+                        <button id="dropdownDefaultButton"
+                            data-dropdown-toggle="dropdown"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button">People/Page<svg
+                                class="w-2.5 h-2.5 ms-3"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 10 6">
+                                <path stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
+                            <ul
+                                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <button id="show10Btn"
+                                        class="block px-4 w-full py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">10</button>
+                                </li>
+                                <li>
+                                    <button id="show20Btn"
+                                        class="block px-4 w-full py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">20</button>
+                                </li>
+                                <li>
+                                    <button id="show30Btn"
+                                        class="block px-4 w-full py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">30</button>
+                                </li>
+                                <li>
+                                    <button id="show40Btn"
+                                        class="block px-4 w-full py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">40</button>
+                                </li>
+                                <li>
+                                    <button id="show50Btn"
+                                        class="block w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">50</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--Second DropDown-->
+
+                    <div>
+                        <button id="secondDropDown"
+                            data-dropdown-toggle="dropdown2"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button">Sort By<svg
+                                class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 10 6">
+                                <path stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown2"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 overflow-hidden overflow-y-scroll h-[12rem]">
+                            <ul
+                                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="secondDropDown">
+                                <li>
+                                    <button id="ascendingId"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        ID
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="ascendingFirstName"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        First Name
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="ascendingLastName"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Last Name
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="ascendingHeight"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Height
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="ascendingAge"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Age
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="descendingId"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        ID
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="descendingFirstName"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        First Name
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="descendingLastName"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Last Name
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="descendingHeight"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Height
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="descendingAge"
+                                        class="px-4 py-2 flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        Age
+                                        <svg class="w-1/6 h-full"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 384 512"><path
+                                                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="listOutput">
+
+        </section>
+        <pagination>
+
+            <div class="flex">
+                <!-- Previous Button -->
+                <button id="previousBtn"
+                    class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    Previous
+                </button>
+
+                <!-- Next Button -->
+                <button id="nextBtn"
+                    class="flex items-center justify-center px-4 h-10 ms-3 text-base font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                    Next
+                </button>
+            </div>
+        </pagination>
+
+        <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+        <script type="module" src="./scripts/app.js"></script>
+    </body>
+</html>
